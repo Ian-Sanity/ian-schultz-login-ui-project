@@ -1,3 +1,7 @@
+body{
+    height:100%;
+    margin:0
+}
 #page{
     background-color: rgb(141, 138, 207);
     display: flex;
@@ -9,21 +13,28 @@
 #loginBox{
     background-color: rgb(228, 225, 225);
     display: flex;
-    height:150px;
-    width: 150px;
-    justify-content: center;
+    min-height: 200px;
+    min-width: 200px;
+    justify-content:space-evenly;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     box-shadow: 20px 20px 20px rgba(0,0,0,0.19), 10px 10px 10px rgba(0,0,0,0.23);
+    border-radius: 8px;
 }
 #userNameBox{
+    display: flex;
     justify-content: center;
-    background-color:gray;
-    height: 25%;
+    height: 0%;
     width: 100%;
 }
 #passWordBox{
-    background-color: gray;
-    height: 25%;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    border: 20px;
+}
+#signIn{
+    font-size:32px;
+    background-color:darkgray;
 }
